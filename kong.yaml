@@ -9,7 +9,7 @@ plugins:
     hide_client_headers: false
     hour: null
     limit_by: consumer
-    minute: 7
+    minute: 22
     month: null
     path: null
     policy: local
