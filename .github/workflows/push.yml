@@ -1,0 +1,15 @@
+name: Run deck
+on: push
+jobs:
+  deck-sync:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Setup deck
+        uses: kong/setup-deck@v1
+        with:
+          deck-version: "1.19.1"
+      - name: Clone repo
+        uses: actions/checkout@v2
+      - name: run deck deck-sync
+        run: deck sync --kong-addr http://69.230.242.78:8001/
+
