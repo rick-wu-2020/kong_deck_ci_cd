@@ -11,7 +11,7 @@ jobs:
       - name: Clone repo
         uses: actions/checkout@v2
       - name: run deck deck-diff
-        run: deck diff --kong-addr http://69.230.242.78:8001/
+        run: deck diff --kong-addr http://43.192.63.10:8001/
 
   deck-sync:
     needs: deck-diff
@@ -25,4 +25,4 @@ jobs:
       - name: Clone repo
         uses: actions/checkout@v2
       - name: run deck deck-sync
-        run: deck sync --kong-addr http://69.230.242.78:8001/
+        run: deck sync --kong-addr http://43.192.63.10:8001/
